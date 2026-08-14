@@ -101,15 +101,14 @@ public class NuevoPeriodo extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(tfAnio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(cbMes, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jbNuevoPeriodo, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 192, Short.MAX_VALUE)))
-                .addContainerGap())
+                        .addComponent(jbNuevoPeriodo, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -128,7 +127,7 @@ public class NuevoPeriodo extends javax.swing.JFrame {
 
     private void jbNuevoPeriodoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jbNuevoPeriodoMouseClicked
         periodoutils.anadirATabla(new Periodo(
-                Long.valueOf("0"), tfAnio.getText(), cbMes.getSelectedItem().toString(), EstadoPeriodo.CERRADO), jtTablaPeriodos.getModel());
+                Long.valueOf("0"), tfAnio.getText(), cbMes.getSelectedItem().toString(), EstadoPeriodo.ABIERTO), jtTablaPeriodos.getModel());
     }//GEN-LAST:event_jbNuevoPeriodoMouseClicked
 
     /**
